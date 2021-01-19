@@ -97,7 +97,7 @@ namespace WpfApp1
             if (e.Key == Key.Enter)
             {
                 haeTieto();
-                sade.Text = String.Empty;
+                sade.Clear();
             }
         }
 
@@ -110,7 +110,7 @@ namespace WpfApp1
             }).ConfigureAwait(true);
             /* -------------------------------- */
             haeTieto();
-            sade.Text = String.Empty;
+            sade.Clear();
         }
     }
 }
