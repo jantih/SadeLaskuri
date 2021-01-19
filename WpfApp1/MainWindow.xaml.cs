@@ -18,6 +18,7 @@ namespace WpfApp1
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
+    /// Kommentin unohtuminen 19.1.2021, syötetyn säteen lisääminen feediin.
     public partial class MainWindow : Window
     {
         private void laskeKaikki(double sade)
