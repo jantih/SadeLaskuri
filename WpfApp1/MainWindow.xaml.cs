@@ -22,22 +22,26 @@ namespace WpfApp1
     {
         private void laskeKaikki(double sade)
         {
-            teksti1.Text = ($"Ympyrän kehän pituus: {Math.PI * 2 * sade}.\n" +
+            teksti1.Text = ($"Syötetty säde: {sade}\n" +
+                $"Ympyrän kehän pituus: {Math.PI * 2 * sade}.\n" +
                 $"Ympyrän pinta-ala: {Math.PI * Math.Pow(sade, 2)}.\n" +
                 $"Pallon tilavuus: {4 * Math.PI * Math.Pow(sade, 3) / 3}.");
         }
         private void laskePituus(double sade)
         {
-            teksti1.Text = ($"Ympyrän kehän pituus: {Math.PI * 2 * sade}.");
+            teksti1.Text = ($"Syötetty säde: {sade}\n" +
+                $"Ympyrän kehän pituus: {Math.PI * 2 * sade}.");
         }
         private void laskeAla(double sade)
         {
-            teksti1.Text = ($"Ympyrän pinta-ala: {Math.PI * Math.Pow(sade, 2)}.");
+            teksti1.Text = ($"Syötetty säde: {sade}\n" +
+                $"Ympyrän pinta-ala: {Math.PI * Math.Pow(sade, 2)}.");
 
         }
         private void laskeTilavuus(double sade)
         {
-            teksti1.Text = ($"Pallon tilavuus: {4 * Math.PI * Math.Pow(sade, 3) / 3}.");
+            teksti1.Text = ($"Syötetty säde: {sade}\n" +
+                $"Pallon tilavuus: {4 * Math.PI * Math.Pow(sade, 3) / 3}.");
         }
         private void virhe()
         {
@@ -97,7 +101,7 @@ namespace WpfApp1
             if (e.Key == Key.Enter)
             {
                 haeTieto();
-                sade.Text = String.Empty;
+                sade.Clear();
             }
         }
 
@@ -110,7 +114,7 @@ namespace WpfApp1
             }).ConfigureAwait(true);
             /* -------------------------------- */
             haeTieto();
-            sade.Text = String.Empty;
+            sade.Clear();
         }
     }
 }
