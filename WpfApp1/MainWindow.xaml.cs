@@ -106,14 +106,8 @@ namespace WpfApp1
             }
         }
 
-        private async void laskeSade_Click(object sender, RoutedEventArgs e)
+        private void laskeSade_Click(object sender, RoutedEventArgs e)
         {
-            // Ei toimi ilman threadin takia(?), aliohjemassa async samasta syystä
-            await Task.Run(() =>
-            {
-
-            }).ConfigureAwait(true);
-            /* -------------------------------- */
             haeTieto();
             sade.Clear();
         }
